@@ -1,3 +1,5 @@
+[![Latest Stable Version](http://poser.pugx.org/fernandovaller/flags-brasil-states/v)](https://packagist.org/packages/fernandovaller/flags-brasil-states) [![Total Downloads](http://poser.pugx.org/fernandovaller/flags-brasil-states/downloads)](https://packagist.org/packages/fernandovaller/flags-brasil-states)  [![License](http://poser.pugx.org/fernandovaller/flags-brasil-states/license)](https://packagist.org/packages/fernandovaller/flags-brasil-states)
+
 # Bandeiras dos estados brasileiros
 
 Bandeiras dos estados brasileiros em formato `base64` e tamanho `21x14`
