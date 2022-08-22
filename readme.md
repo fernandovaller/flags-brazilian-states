@@ -8,7 +8,7 @@ Bandeiras dos estados brasileiros em formato `base64` e tamanho `21x14`
 Faça a instalação no seu projeto via `require`
 
 ```sh
-$ composer requere fernandovaller/flags-brasil-states
+$ composer require fernandovaller/flags-brasil-states
 ```
 
 ## Obter a bandeira do estado
