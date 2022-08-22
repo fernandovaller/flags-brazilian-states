@@ -1,0 +1,20 @@
+{
+    "name": "fernandovaller/flags-brasil-states",
+    "description": "Bandeiras dos estados brasileiros",
+    "keywords": ["flags", "bandeiras", "brasil", "brazil", "estados", "stages"],
+    "autoload": {
+        "psr-4": {
+            "FVCode\\FlagsBrasilStates\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fernando Valler",
+            "email": "fernandovaller@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "license": "MIT"
+}
