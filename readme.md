@@ -35,7 +35,7 @@ use FVCode\FlagsBrasilStates\Flags;
 
 require __DIR__ . '/vendor/autoload.php';
 
-echo Flags::uf('AC');
+echo Flags::info('AC');
 
 /**
  * Out (array):
