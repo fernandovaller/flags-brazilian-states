@@ -27,6 +27,12 @@ echo Flags::uf('AC');
  */
 ```
 
+Para usar basta inserir o retorno do método `Flags::uf('AC')` no src de tag `<img src="...">`, como no exemplo:
+
+```html
+<img src="data:image/webp;base64,UklGRrYAAABXRUJQVlA4TKoAAAAvE0ADANegJgAIhs8pgnaii7BHDbYBAJYJt/x/oW2ViiFJkvqcUVh/l/VZgH3Mf1g74YeH8If2yLHv5Jpmaaui3SPlI1WFKeejcnS0GfYf3Ja/4T8ifQk1BKDyYSxgGElSosPh3eYt/1CxECL6PwHS0c4iz9sQN+T+/7vGTBeI/j5dEVYAcc/jCmo8ydT6hXxN2mmyM5WFuNFkpoumsNIoosaTJr/QPhx0BA==" />
+```
+
 ## Obter informações sobre o estado
 ```php
 <?php
