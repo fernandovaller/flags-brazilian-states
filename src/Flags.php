@@ -4,38 +4,50 @@ namespace FVCode\FlagsBrazilianStates;
 
 class Flags
 {
+    private static $flagsData;
+
     private static function load(): array
     {
-        $fileName = \dirname(__DIR__, 1) . DIRECTORY_SEPARATOR . 'resources' . DIRECTORY_SEPARATOR . 'states.json';
+        if (self::$flagsData === null) {
+            $fileName = __DIR__ . '/../resources/states.json';
+            $flagsJson = file_get_contents($fileName);
+            self::$flagsData = json_decode($flagsJson, true);
+        }
 
-        return \json_decode(
-            file_get_contents($fileName),
-            true
-        );
+        return self::$flagsData;
     }
 
     /**
      * Retorna a imagem da bandeira do estado
-     *
      */
     public static function uf(string $uf): ?string
     {
-        return self::load()[\strtoupper($uf)]['flag'] ?? null;
+        $flags = self::load();
+
+        $normalizedUf = strtoupper($uf);
+
+        return $flags[$normalizedUf]['flag'] ?? null;
     }
 
     /**
      * Retorna informações sobre um estado [id, stage, capital, flag]
-     *
      */
-    public static function ufInfo(string $uf): ?array
+    public static function UfInfo(string $uf): ?array
     {
-        return self::load()[\strtoupper($uf)] ?? null;
+        $flags = self::load();
+
+        $normalizedUf = strtoupper($uf);
+
+        return $flags[$normalizedUf] ?? null;
     }
 
     public static function img(string $uf, int $width = 18): string
     {
-        $info = self::ufInfo($uf);
+        $ufInfo = self::ufInfo($uf);
 
-        return sprintf('<img src="%s" title="%s" width="%d"/>', $info['flag'], $info['stage'], $width);
+        $flagUrl = $ufInfo['flag'] ?? '';
+        $stage = $ufInfo['stage'] ?? '';
+
+        return sprintf('<img src="%s" title="%s" width="%d"/>', $flagUrl, $stage, $width);
     }
 }
