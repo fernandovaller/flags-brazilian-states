@@ -1,2 +1,5 @@
+.idea/
 vendor/
 .editorconfig
+.phpunit.result.cache
+coverage/*

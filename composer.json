@@ -1,7 +1,14 @@
 {
     "name": "fernandovaller/flags-brasil-states",
     "description": "Bandeiras dos estados brasileiros",
-    "keywords": ["flags", "bandeiras", "brasil", "brazil", "estados", "stages"],
+    "keywords": [
+        "flags",
+        "bandeiras",
+        "brasil",
+        "brazil",
+        "estados",
+        "stages"
+    ],
     "autoload": {
         "psr-4": {
             "FVCode\\FlagsBrasilStates\\": "src/"
@@ -15,6 +22,12 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
-    "license": "MIT"
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*"
+    },
+    "license": "MIT",
+    "require-dev": {
+        "phpunit/phpunit": "9.6.x-dev"
+    }
 }

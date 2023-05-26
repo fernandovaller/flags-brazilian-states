@@ -54,6 +54,22 @@ echo Flags::info('AC');
  */
 ```
 
+## Obter tag img 
+```php
+<?php
+
+use FVCode\FlagsBrasilStates\Flags;
+
+require __DIR__ . '/vendor/autoload.php';
+
+echo Flags::img('PI', 20);
+
+/**
+ * Out (string):
+ * <img src="data:image/webp;base64,...." title="Piauí" width="20"/>
+ */
+```
+
 Licença
 -
 [![License](https://poser.pugx.org/germanoricardi/brazilian-helper/license)](https://packagist.org/packages/germanoricardi/brazilian-helper)
