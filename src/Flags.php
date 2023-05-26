@@ -1,6 +1,6 @@
 <?php
 
-namespace FVCode\FlagsBrasilStates;
+namespace FVCode\FlagsBrazilianStates;
 
 class Flags
 {

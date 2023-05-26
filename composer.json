@@ -1,6 +1,6 @@
 {
-    "name": "fernandovaller/flags-brasil-states",
-    "description": "Bandeiras dos estados brasileiros",
+    "name": "fernandovaller/flags-brazilian-states",
+    "description": "Flags of the Brazilian states",
     "keywords": [
         "flags",
         "bandeiras",
@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "FVCode\\FlagsBrasilStates\\": "src/"
+            "FVCode\\FlagsBrazilianStates\\": "src/"
         }
     },
     "authors": [

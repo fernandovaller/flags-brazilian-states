@@ -2,7 +2,7 @@
 
 namespace Unit;
 
-use FVCode\FlagsBrasilStates\Flags;
+use FVCode\FlagsBrazilianStates\Flags;
 use PHPUnit\Framework\TestCase;
 
 class FlagsTest extends TestCase
